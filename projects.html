@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>დედამიწის კვირეული</title>
+
+<style>
+
+body {
+    font-family: Arial;
+    background: #f5f5f5;
+    margin: 0;
+    background-color:  #3477eb;
+}
+
+/* HEADER */
+.header {
+    background: #0118e1;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: inset 0 0 10px rgba(255,255,255,0.5);
+}
+
+/* PROJECT GRID */
+.projects {
+    width: 95%;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* CARD */
+.project {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+/* IMAGE */
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+/* HOVER */
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.project:hover img {
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* BUTTON */
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #1dc44a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* 📱 TABLET */
+@media (max-width: 900px) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 📱 MOBILE */
+@media (max-width: 600px) {
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .project img {
+        height: 180px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+.header {
+    background: linear-gradient(135deg, #1e38cd, #1d34b8);
+    color: white;
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 0 0 20px 20px;
+}
+
+/* სათაური */
+.header h1 {
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    padding: 0 50px; /* 👉 ეს აშორებს ტექსტს ისრისგან */
+}
+.back-btn {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    background: rgba(20, 73, 235, 0.2);
+    padding: 8px 12px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+/* hover */
+.back-btn:hover {
+    background: #ff4d4d;
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+    <a href="./index.html" class="back-btn">←</a>
+    <h1>დედამიწის კვირეული</h1>
+</header>
+
+<div class="projects">
+
+    <div class="project">
+        <img src="./download3.jpg" alt="დედამიწის კვირეულის პროექტის სურათი 1" title="დედამიწის კვირეულის პროექტი 1">
+    </div>
+
+    <div class="project">
+        <img src="./download4.jpg" alt="დედამიწის კვირეულის პროექტის სურათი 2" title="დედამიწის კვირეული 2">
+    </div>
+
+    <div class="project" >
+        <img src="./download5.jpg" alt="დედამიწის კვირეულის პროექტის სურათი 3" title="დედამიწის კვირეული 3">
+    </div>
+
+    <div class="project">
+        <img src="./download6.jpg" alt="დედამიწის კვირეულის პროექტის სურათი 4" title="დედამიწის კვირეული 4">
+    </div>
+
+    <div class="project">
+        <img src="./downoald7.jpg" alt="დედამიწის კვირეულის პროექტის სურათი 5" title="დედამიწის კვირეული 5">
+    </div>
+    <div class="project">
+        <img src="./download26.jpg" alt="დედამიწის კვირეულის პროექტის სურათი 5" title="დედამიწის კვირეული 6">
+    </div>
+        <div class="project">
+        <img src="./download27.jpg" alt="დედამიწის კვირეულის პროექტის სურათი 5" title="დედამიწის კვირეული 5">
+    </div>
+        <div class="project">
+        <img src="./download28.jpg" alt="დედამიწის კვირეულის პროექტის სურათი 5" title="დედამიწის კვირეული 5">
+    </div>
+</div>
+
+<footer>
+    <h2>პრეზენტაციის სრულად სანახავად ჩამოტვირთეთ pdf.</h2>
+    <br>
+    <a class="download-button" href="./dedamiwis dge.pdf" download>
+        ჩამოტვირთეთ PDF
+    </a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,317 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    background-color: #3477eb;
+}
+
+/* HEADER */
+.header {
+    background: #0118e1;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* MAIN */
+.container {
+    width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    gap: 20px;
+}
+
+/* LEFT CONTENT */
+.content {
+    flex: 3;
+}
+
+.section-title {
+    border-bottom: 3px solid #ff0000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    flex: 1;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #555;
+}
+
+/* SIDEBAR */
+.sidebar {
+    flex: 1;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.side-card {
+    background: white;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.side-card img {
+    width: 100%;
+}
+
+.side-card-text {
+    padding: 15px;
+}
+
+/* PAGINATION */
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination span {
+    display: inline-block;
+    padding: 8px 12px;
+    background: #ddd;
+    margin: 3px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination span.active {
+    background: #2b7a78;
+    color: white;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* BURGER */
+.burger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* DEFAULT NAV */
+.nav {
+    display: flex;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 900px) {
+
+    .container {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .nav {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #1d5ac4;
+        flex-direction: column;
+        width: 200px;
+        display: none;
+        padding: 15px;
+    }
+
+    .nav a {
+        margin: 10px 0;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+
+
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+    background-color:#555;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.facebook-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #1877f2;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+/* hover ეფექტი */
+.facebook-btn:hover {
+    background: #0d5fd1;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* ტექსტი ქვემოთ */
+.creator {
+    margin-top: 15px;
+    color: white;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .facebook-btn {
+        width: 90%;
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    .creator {
+        font-size: 12px;
+    }
+}
+
+.header {
+    background: linear-gradient(135deg, #2b52d1, #72a7b8, #2c5364);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 0 10px 25px rgba(39, 23, 189, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+/* ლოგო */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+}
+
+/* underline animation */
+.logo::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: 0.3s;
+    transform: translateX(-50%);
+}
+
+.logo:hover::after {
+    width: 100%;
+}
+
+/* პატარა glow */
+.logo:hover {
+    text-shadow: 0 0 10px rgba(255,255,255,0.7);
+}
