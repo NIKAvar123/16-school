@@ -446,6 +446,25 @@ footer {
     align-items: center;
     position: relative;
 }
+
+
+
+.card {
+    width: 370px; /* აკონტროლებს ზომას */
+    max-width: 100%;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
 </style>
 <footer>
 <a href="https://www.facebook.com/n16sajaroskola" target="_blank" class="facebook-btn">
