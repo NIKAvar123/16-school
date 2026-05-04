@@ -19,7 +19,7 @@
 <body>
 
 <div class="header">
-    <div class="logo">N16 საჯარო სკოლა</div>
+    <div class="logo">სსიპ დავით სარაჯიშვილის სახელობის <br>N16 საჯარო სკოლა</div>
 
 <div class="burger" onclick="toggleMenu()">☰</div>
 
@@ -70,7 +70,6 @@
 
 </div>
 <style>
-
  .nav {
   display: none;
 }
@@ -117,12 +116,12 @@ body {
 
 /* MAIN */
 .container {
-    width: 95%;
-    max-width: 1200px;
+    width: 1200px;
     margin: 30px auto;
     display: flex;
     gap: 20px;
 }
+
 /* LEFT CONTENT */
 .content {
     flex: 3;
@@ -137,10 +136,12 @@ body {
 
 /* CARDS */
 .cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     gap: 20px;
+    text-decoration: none;
+    
 }
+
 .card {
     background: white;
     border-radius: 8px;
@@ -219,23 +220,36 @@ body {
 
 /* BURGER */
 .burger {
-    display: none;
+    display: block;
     font-size: 28px;
     cursor: pointer;
 }
 
 /* DEFAULT NAV */
 .nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    background: #1dc44a;
+    flex-direction: column;
+    width: 180px;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.nav.active {
     display: flex;
 }
 
 /* 📱 MOBILE */
-@media (max-width: 600px) {
+@media (max-width: 900px) {
+
     .container {
+        flex-direction: column;
         width: 95%;
-        margin: 15px auto;
     }
-}
 
     .cards {
         flex-direction: column;
@@ -263,29 +277,10 @@ body {
     .burger {
         display: block;
     }
-@media (max-width: 900px) {
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    
 }
 
-@media (max-width: 600px) {
-    .cards {
-        grid-template-columns: 1fr;
-    }
-}
 
-@media (max-width: 600px) {
-    .facebook-btn {
-        width: 90%;
-        justify-content: center;
-        font-size: 14px;
-    }
-
-    .creator {
-        font-size: 12px;
-    }
-}
 html, body {
   height: 100%;
   margin: 0;
@@ -306,7 +301,10 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
+
+
 }
+
 
 
 .facebook-btn {
@@ -329,6 +327,7 @@ footer {
     border-radius: 50%;
 }
 
+
 .facebook-btn:hover {
     background: #0d5fd1;
     transform: translateY(-3px) scale(1.05);
@@ -341,18 +340,32 @@ footer {
     color: white;
     font-size: 14px;
 }
+@media (max-width: 600px) {
+    .facebook-btn {
+        width: 90%;
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    .creator {
+        font-size: 12px;
+    }
+}
 .header {
     background: linear-gradient(135deg, #2b52d1, #72a7b8, #2c5364);
     color: white;
     padding: 20px;
-    text-align: center;
     border-radius: 0 0 25px 25px;
     box-shadow: 0 10px 25px rgba(39, 23, 189, 0.3);
     position: sticky;
     top: 0;
     z-index: 1000;
-}
 
+    display: flex;
+    justify-content: center;   /* ცენტრში ჰორიზონტალურად */
+    align-items: center;       /* ცენტრში ვერტიკალურად */
+    text-align: center;
+}
 /* ლოგო */
 .logo {
     font-size: 24px;
@@ -384,6 +397,55 @@ footer {
     text-shadow: 0 0 10px rgba(255,255,255,0.7);
 }
 
+
+
+
+
+
+
+
+footer {
+    margin-top: auto;
+    background-color: #555;
+    color: white;
+    padding: 12px 10px;
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+}
+
+
+
+.qr-btn {
+    padding: 6px 10px;
+    font-size: 13px;
+    border-radius: 6px;
+}
+
+.facebook-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+}
+
+.social-icon {
+    width: 18px;
+    height: 18px;
+}
+.rights {
+    font-size: 11px;
+    margin-top: 6px;
+    color: #ddd;
+}
+
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between; /* ეს უნდა იყოს */
+    align-items: center;
+    position: relative;
+}
 </style>
 <footer>
 <a href="https://www.facebook.com/n16sajaroskola" target="_blank" class="facebook-btn">
@@ -391,7 +453,7 @@ footer {
     <span>Facebook გვერდი</span>
 </a>
 
-<p class="creator">Site created by Nika Mumladze.</p>
+<p class="rights">All Rights Reserved © 2026</p> 
 </footer>
 </body>
 </html>

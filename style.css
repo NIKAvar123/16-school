@@ -220,13 +220,7 @@ main {
   flex: 1;
 }
 
-footer {
-  margin-top: auto;
-    background-color:#555;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
+
 
 .facebook-btn {
     display: inline-flex;
@@ -255,12 +249,7 @@ footer {
     box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
 
-/* ტექსტი ქვემოთ */
-.creator {
-    margin-top: 15px;
-    color: white;
-    font-size: 14px;
-}
+
 
 @media (max-width: 600px) {
     .facebook-btn {
@@ -356,14 +345,74 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: -10px;
 }
 
-
+.creator {
+    font-size: 12px;
+    color: #ddd;
+    margin-top: 5px;
+}
 
 
 .rights {
     font-size: 12px;
     color: #ddd;
     margin-top: 5px;
+}
+
+
+
+
+
+footer {
+    margin-top: auto;
+    background-color: #555;
+    color: white;
+    padding: 12px 10px;
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+}
+
+
+
+.qr-btn {
+    padding: 6px 10px;
+    font-size: 13px;
+    border-radius: 6px;
+}
+
+.facebook-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+}
+
+.social-icon {
+    width: 18px;
+    height: 18px;
+}
+.rights {
+    font-size: 11px;
+    margin-top: 6px;
+    color: #ddd;
+}
+
+
+
+
+.header {
+    background: linear-gradient(135deg, #2b52d1, #72a7b8, #2c5364);
+    color: white;
+    padding: 20px;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 0 10px 25px rgba(39, 23, 189, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;   /* ცენტრში ჰორიზონტალურად */
+    align-items: center;       /* ცენტრში ვერტიკალურად */
+    text-align: center;
 }
