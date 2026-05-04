@@ -18,7 +18,7 @@
 <body>
 
 <div class="header">
-    <div class="logo">N16 საჯარო სკოლა</div>
+    <div class="logo">სსიპ დავით სარაჯიშვილის სახელობის <br>N16 საჯარო სკოლა</div>
 
 </div>
 
@@ -73,13 +73,28 @@
 
 </div>
 <footer>
+
+<button class="qr-btn" onclick="openQR()">საიტის QR Code</button>
+
 <a href="https://www.facebook.com/n16sajaroskola" target="_blank" class="facebook-btn">
     <img src="./facebook.jpg" alt="Facebook" class="social-icon">
     <span>Facebook გვერდი</span>
 </a>
+<p class="rights">All Rights Reserved © 2026</p> 
 
-<p  class="creator">Site created by Nika Mumladze.</p>
-</footer>
 
+<div id="qrOverlay" class="qr-overlay" onclick="closeQR()">
+    <img src="./QR code.jpg" alt="QR Code">
+</div>
 </body>
+<script>
+function openQR() {
+    document.getElementById("qrOverlay").style.display = "flex";
+    document.querySelector(".header").style.display = "none";
+}
+
+function closeQR() {
+    document.getElementById("qrOverlay").style.display = "none";
+    document.querySelector(".header").style.display = "block";
+}</script>
 </html>
